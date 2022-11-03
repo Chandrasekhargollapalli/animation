@@ -1,0 +1,139 @@
+body{
+    margin:0px;
+}
+#bg{
+    position:relative;
+    background:linear-gradient(rgb(25, 48, 89),rgb(10, 23, 35));
+    height:100vh;
+    overflow:hidden;
+  
+}
+#bg h1{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    font-size:50px;
+    color:rgb(208, 229, 15);
+    text-transform:uppercase;
+    z-index:1;
+}
+ul li img{
+    width:40px;
+    height:40px;
+}
+
+#bg ul li{
+    position:absolute;
+    list-style:none;
+    border:2px solid rgb(15, 205, 239);
+    width:40px;
+    height:40px;
+    background-color:rgb(60, 178, 211);
+    
+  
+    z-index:0;
+}
+#chanti li{
+    top:52%;
+    left:50%;
+    
+    animation:chandu 5s infinite;
+    
+}
+#chanti li:nth-child(1){
+    top:10%;
+    left:10%;
+    animation-delay:2s;
+}
+#chanti li:nth-child(2){
+    top:10%;
+    left:80%;
+    animation-delay:1s;
+}
+#chanti li:nth-child(3){
+    top:18%;
+    animation-delay:1s;
+}
+#chanti li:nth-child(4){
+    top:40%;
+    left:13%;
+    animation: delay 0.8em;;
+}
+#chanti li:nth-child(5){
+    top:90%;
+    animation-delay:4s;
+}
+#chanti li:nth-child(6){
+    top:85%;
+    left:13%;
+    animation-delay:5s;
+}
+#chanti li:nth-child(7){
+    top:75%;
+    left:80%;
+    animation-delay:1s;
+}
+#circle  li{
+    border-radius:30px;
+    color:aqua;
+    bottom:10px;
+    animation:datta 7s infinite;
+
+}
+#circle li:nth-child(1){
+    left:20%;
+    animation-delay:1s;
+}
+#circle li:nth-child(2){
+    left:40%;
+    animation-delay:3s;
+}
+#circle li:nth-child(3){
+    left:90%;
+    animation-delay:2s;
+}
+#circle li:nth-child(4){
+    left:65%;
+    animation-delay:4s;
+}
+#circle li:nth-child(5){
+    left:80%;
+    animation-delay:1s;
+}
+#circle li:nth-child(6){
+    left:30px;
+    animation-delay:2s;
+}
+#circle li:nth-child(7){
+    left:10px;
+    animation-delay:4s;
+}
+@keyframes chandu{
+    0%{
+        opacity:1;
+        transform:scale(0);
+    }
+    100%{
+        opacity:0;
+       transform:scale(3) rotateY(1000deg)
+    }
+}
+@keyframes datta{
+    0%{
+        opacity:1;
+        transform:scale(0);
+        border-radius:0px;
+        border:0px;
+
+    }
+    100%{
+        transform:scale(3) rotateY(1000deg);
+        bottom:90vh;
+        border-radius:50%;
+        opacity:0;
+        
+    }
+}
+
+
